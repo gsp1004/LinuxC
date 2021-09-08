@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DBGLINE	gsp.h	3;"	d
+JOSEPHU_H__	josephu.h	2;"	d
+JOSE_NUM	main.c	10;"	d	file:
+MALLOC_ERROR	gsp.h	7;"	d
+PARAM_ERROR	gsp.h	6;"	d
+data	josephu.h	/^	datatype data;$/;"	m	struct:node_st
+datatype	josephu.h	/^typedef int datatype;$/;"	t
+jose_create	josephu.c	/^list * jose_create(int n)$/;"	f
+jose_kill	josephu.c	/^void jose_kill(list **me,int n)$/;"	f
+jose_show	josephu.c	/^void jose_show(list * const me)$/;"	f
+list	josephu.h	/^}list;$/;"	t	typeref:struct:node_st
+main	main.c	/^int main(int argc, char *argv[])$/;"	f
+next	josephu.h	/^	struct node_st *next;$/;"	m	struct:node_st	typeref:struct:node_st::node_st
+node_st	josephu.h	/^typedef struct node_st$/;"	s

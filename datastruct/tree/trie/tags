@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BUFSIZE	main.c	15;"	d	file:
+CHARNUM	main.c	16;"	d	file:
+DESCSIZE	main.c	13;"	d	file:
+KEYSIZE	main.c	14;"	d	file:
+LOGFILE	main.c	11;"	d	file:
+ch	main.c	/^	struct node_st *ch[CHARNUM];$/;"	m	struct:node_st	typeref:struct:node_st::node_st	file:
+desc	main.c	/^	char desc[DESCSIZE];$/;"	m	struct:node_st	file:
+find	main.c	/^char *find(tree_node *root, char *key)$/;"	f
+get_word	main.c	/^int get_word(FILE *fp, char *key, char *desc)$/;"	f
+insert	main.c	/^int insert(tree_node **root, char *key, char *desc)$/;"	f
+main	main.c	/^int main()$/;"	f
+newnode	main.c	/^tree_node *newnode(void)$/;"	f
+node_st	main.c	/^typedef struct node_st$/;"	s	file:
+tree_node	main.c	/^}tree_node;$/;"	t	typeref:struct:node_st	file:

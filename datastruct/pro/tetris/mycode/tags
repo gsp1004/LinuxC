@@ -1,0 +1,73 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+COLOR_BG_BLACK	ansi_vt.c	/^	COLOR_BG_BLACK = 40,$/;"	e	enum:color_e	file:
+COLOR_BG_BLUE	ansi_vt.c	/^	COLOR_BG_BLUE  ,$/;"	e	enum:color_e	file:
+COLOR_BG_BLUE2	ansi_vt.c	/^	COLOR_BG_BLUE2 ,$/;"	e	enum:color_e	file:
+COLOR_BG_BROWN	ansi_vt.c	/^	COLOR_BG_BROWN ,$/;"	e	enum:color_e	file:
+COLOR_BG_GREEN	ansi_vt.c	/^	COLOR_BG_GREEN ,$/;"	e	enum:color_e	file:
+COLOR_BG_PINK	ansi_vt.c	/^	COLOR_BG_PINK  ,$/;"	e	enum:color_e	file:
+COLOR_BG_RED	ansi_vt.c	/^	COLOR_BG_RED   ,$/;"	e	enum:color_e	file:
+COLOR_BG_WHITE	ansi_vt.c	/^	COLOR_BG_WHITE ,$/;"	e	enum:color_e	file:
+COLOR_FG_BLACK	ansi_vt.c	/^	COLOR_FG_BLACK = 30,$/;"	e	enum:color_e	file:
+COLOR_FG_BLUE	ansi_vt.c	/^	COLOR_FG_BLUE  ,$/;"	e	enum:color_e	file:
+COLOR_FG_BLUE2	ansi_vt.c	/^	COLOR_FG_BLUE2 ,$/;"	e	enum:color_e	file:
+COLOR_FG_BROWN	ansi_vt.c	/^	COLOR_FG_BROWN ,$/;"	e	enum:color_e	file:
+COLOR_FG_GREEN	ansi_vt.c	/^	COLOR_FG_GREEN ,$/;"	e	enum:color_e	file:
+COLOR_FG_PINK	ansi_vt.c	/^	COLOR_FG_PINK  ,$/;"	e	enum:color_e	file:
+COLOR_FG_RED	ansi_vt.c	/^	COLOR_FG_RED   ,$/;"	e	enum:color_e	file:
+COLOR_FG_WHITE	ansi_vt.c	/^	COLOR_FG_WHITE ,$/;"	e	enum:color_e	file:
+button_down	ansi_vt.c	/^void button_down()$/;"	f
+button_left	ansi_vt.c	/^void button_left()$/;"	f
+button_right	ansi_vt.c	/^void button_right()$/;"	f
+button_up	ansi_vt.c	/^void button_up()$/;"	f
+color	ansi_vt.c	/^}color;$/;"	t	typeref:enum:color_e	file:
+color_e	ansi_vt.c	/^typedef enum color_e$/;"	g	file:
+draw	ansi_vt.c	/^void draw(void)$/;"	f
+draw_box	ansi_vt.c	/^void draw_box(int x, int y, int w, int h, int line_w)$/;"	f
+draw_box_game	ansi_vt.c	/^void draw_box_game(void)$/;"	f
+draw_box_next	ansi_vt.c	/^void draw_box_next(void)$/;"	f
+draw_box_pixel	ansi_vt.c	/^void draw_box_pixel(int x, int y)$/;"	f
+draw_pixel	ansi_vt.c	/^void draw_pixel(const int x, const int y, color c, const char lc, const char rc)$/;"	f
+fill_color	ansi_vt.c	/^void fill_color( char *cmd, int fg, int bg)$/;"	f
+fill_position	ansi_vt.c	/^void fill_position(char *cmd, int x, int y)$/;"	f
+fill_str	ansi_vt.c	/^void fill_str(char *cmd, char *str)$/;"	f
+fresh_image	ansi_vt.c	/^void * fresh_image(void * nouse)$/;"	f
+game_box_h	ansi_vt.c	83;"	d	file:
+game_box_line_width	ansi_vt.c	80;"	d	file:
+game_box_w	ansi_vt.c	82;"	d	file:
+game_box_x	ansi_vt.c	84;"	d	file:
+game_box_y	ansi_vt.c	85;"	d	file:
+left_space	ansi_vt.c	76;"	d	file:
+level	ansi_vt.c	/^int level = 990;$/;"	v
+level_num_start_x	ansi_vt.c	104;"	d	file:
+level_num_start_y	ansi_vt.c	105;"	d	file:
+level_str_start_x	ansi_vt.c	101;"	d	file:
+level_str_start_y	ansi_vt.c	102;"	d	file:
+main	ansi_vt.c	/^int main()$/;"	f
+mid_space	ansi_vt.c	87;"	d	file:
+next_box_h	ansi_vt.c	92;"	d	file:
+next_box_line_width	ansi_vt.c	93;"	d	file:
+next_box_w	ansi_vt.c	91;"	d	file:
+next_box_x	ansi_vt.c	94;"	d	file:
+next_box_y	ansi_vt.c	95;"	d	file:
+next_str_start_x	ansi_vt.c	97;"	d	file:
+next_str_start_y	ansi_vt.c	98;"	d	file:
+old_env	ansi_vt.c	/^static struct termios old_env;$/;"	v	typeref:struct:termios	file:
+play_area_h	ansi_vt.c	79;"	d	file:
+play_area_w	ansi_vt.c	78;"	d	file:
+right_space	ansi_vt.c	89;"	d	file:
+score	ansi_vt.c	/^int score = 0;$/;"	v
+score_num_start_x	ansi_vt.c	111;"	d	file:
+score_num_start_y	ansi_vt.c	112;"	d	file:
+score_str_start_x	ansi_vt.c	108;"	d	file:
+score_str_start_y	ansi_vt.c	109;"	d	file:
+show_level	ansi_vt.c	/^void show_level(int l)$/;"	f
+show_score	ansi_vt.c	/^void show_score(int num)$/;"	f
+show_str	ansi_vt.c	/^void show_str(int x, int y, char *s, int fg, int bg)$/;"	f
+termios_init	ansi_vt.c	/^void termios_init(void)$/;"	f
+termios_restore	ansi_vt.c	/^void termios_restore(void)$/;"	f
+top_space	ansi_vt.c	77;"	d	file:

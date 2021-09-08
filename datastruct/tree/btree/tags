@@ -1,0 +1,41 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+INORDER	main.c	/^	INORDER,       \/\/ zhongxu$/;"	e	enum:travel_mode	file:
+NAMESIZE	main.c	13;"	d	file:
+POSTORDER	main.c	/^	POSTORDER,     \/\/ houxu$/;"	e	enum:travel_mode	file:
+PREORDER	main.c	/^	PREORDER = 0,  \/\/ xianxu $/;"	e	enum:travel_mode	file:
+TRAVEL_MODE_BOTTOM	main.c	/^	TRAVEL_MODE_BOTTOM$/;"	e	enum:travel_mode	file:
+balance	main.c	/^void balance(tree_node **root)$/;"	f
+data	main.c	/^	score data;$/;"	m	struct:node_st	file:
+del	main.c	/^int del(tree_node **root, int id)$/;"	f
+del_	main.c	/^static void del_(tree_node **root)$/;"	f	file:
+draw	main.c	/^void draw(tree_node *root)$/;"	f
+draw_	main.c	/^void draw_(tree_node *root, int level)$/;"	f
+find	main.c	/^tree_node *find(tree_node *root, int id)$/;"	f
+find_	main.c	/^tree_node **find_(tree_node **root, int id)$/;"	f
+find_max	main.c	/^tree_node *find_max(tree_node *root)$/;"	f
+find_min	main.c	/^tree_node *find_min(tree_node *root)$/;"	f
+get_num	main.c	/^static int get_num(tree_node *root)$/;"	f	file:
+id	main.c	/^	int id;$/;"	m	struct:score_st	file:
+insert	main.c	/^int insert(tree_node **root, score *data)$/;"	f
+l	main.c	/^	struct node_st *l, *r;$/;"	m	struct:node_st	typeref:struct:node_st::node_st	file:
+main	main.c	/^int main()$/;"	f
+math	main.c	/^	int math;$/;"	m	struct:score_st	file:
+name	main.c	/^	char name[NAMESIZE];$/;"	m	struct:score_st	file:
+node_st	main.c	/^typedef struct node_st$/;"	s	file:
+printf_s	main.c	/^void printf_s(score *d)$/;"	f
+r	main.c	/^	struct node_st *l, *r;$/;"	m	struct:node_st	typeref:struct:node_st::	file:
+score	main.c	/^}score;$/;"	t	typeref:struct:score_st	file:
+score_st	main.c	/^typedef struct score_st$/;"	s	file:
+table	main.c	/^void table(tree_node *root)$/;"	f
+table_	main.c	/^void table_(tree_node *root)$/;"	f
+travel	main.c	/^void travel(tree_node *root, enum travel_mode mode)$/;"	f
+travel_level	main.c	/^void travel_level(tree_node *root)$/;"	f
+travel_mode	main.c	/^enum travel_mode$/;"	g	file:
+tree_node	main.c	/^}tree_node;$/;"	t	typeref:struct:node_st	file:
+turn_left	main.c	/^static void turn_left(tree_node **root)$/;"	f	file:
+turn_right	main.c	/^static void turn_right(tree_node **root)$/;"	f	file:

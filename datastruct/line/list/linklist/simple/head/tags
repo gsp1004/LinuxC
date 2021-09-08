@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DBGLINE	gsp.h	3;"	d
+LIST_H__	list.h	2;"	d
+data	list.h	/^	datatype data;$/;"	m	struct:node_st
+datatype	list.h	/^typedef int datatype;$/;"	t
+list	list.h	/^}list;$/;"	t	typeref:struct:node_st
+list_create	list.c	/^list *list_create()$/;"	f
+list_delete	list.c	/^int list_delete(list *me, datatype *data)$/;"	f
+list_delete_at	list.c	/^int list_delete_at(list *me,int i)$/;"	f
+list_destory	list.c	/^void list_destory(list *me)$/;"	f
+list_display	list.c	/^void list_display(list *me)$/;"	f
+list_insert_at	list.c	/^int list_insert_at(list *me,int i, datatype *data)$/;"	f
+list_insert_order	list.c	/^int list_insert_order(list *me, datatype *data)$/;"	f
+list_isempty	list.c	/^int list_isempty(list *me)$/;"	f
+main	main.c	/^int main()$/;"	f
+next	list.h	/^	struct node_st * next;$/;"	m	struct:node_st	typeref:struct:node_st::node_st
+node_st	list.h	/^typedef struct node_st$/;"	s

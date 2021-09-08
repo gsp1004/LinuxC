@@ -1,0 +1,48 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAX1HOUR	main.c	24;"	d	file:
+MAX1MIN	main.c	22;"	d	file:
+MAX5MIN	main.c	23;"	d	file:
+MAXSIZE	queue.h	4;"	d
+NR_BALL	main.c	25;"	d	file:
+QUEUE_H__	queue.h	2;"	d
+SQSTACK_H__	sqstack.h	2;"	d
+STACKMAXSIZE	sqstack.h	4;"	d
+clear_stack	main.c	/^void clear_stack(sqstack *st, queue *qu)$/;"	f
+data	queue.h	/^	queuedatatype data[MAXSIZE];$/;"	m	struct:node_st
+data	sqstack.h	/^	stackdatatype data[STACKMAXSIZE];$/;"	m	struct:stack_node_st
+head	queue.h	/^	int head,tail;$/;"	m	struct:node_st
+main	main.c	/^int main()$/;"	f
+node_st	queue.h	/^typedef struct node_st$/;"	s
+put_ball_into_stack	main.c	/^int put_ball_into_stack(sqstack ** st, int *stackmax, int i, int stacknum, int *ball, queue *qu)$/;"	f
+qu_clear	queue.c	/^void qu_clear(queue *sq)$/;"	f
+qu_create	queue.c	/^queue *qu_create()$/;"	f
+qu_dequeue	queue.c	/^int qu_dequeue(queue *sq, queuedatatype *data)$/;"	f
+qu_destroy	queue.c	/^void qu_destroy(queue *sq)$/;"	f
+qu_enqueue	queue.c	/^int qu_enqueue(queue *sq, queuedatatype *data)$/;"	f
+qu_isempty	queue.c	/^int qu_isempty(queue *sq)$/;"	f
+qu_isfull	queue.c	/^int qu_isfull(queue *sq)$/;"	f
+qu_number	queue.c	/^int qu_number(queue *sq)$/;"	f
+qu_travel	queue.c	/^void qu_travel(queue *sq)$/;"	f
+queue	queue.h	/^}queue;$/;"	t	typeref:struct:node_st
+queue_isInOrder	main.c	/^int queue_isInOrder(queue *qu, int ballnum)$/;"	f
+queuedatatype	queue.h	/^typedef int queuedatatype;$/;"	t
+sqstack	sqstack.h	/^}sqstack;$/;"	t	typeref:struct:stack_node_st
+st_create	sqstack.c	/^sqstack * st_create(void)$/;"	f
+st_destroy	sqstack.c	/^void st_destroy(sqstack * st)$/;"	f
+st_isempty	sqstack.c	/^int st_isempty(sqstack * st)$/;"	f
+st_isfull	sqstack.c	/^int st_isfull(sqstack * st)$/;"	f
+st_number	sqstack.c	/^int st_number(sqstack * st)$/;"	f
+st_pop	sqstack.c	/^int st_pop(sqstack * st, stackdatatype *data)$/;"	f
+st_push	sqstack.c	/^int st_push(sqstack * st, stackdatatype *data)$/;"	f
+st_top	sqstack.c	/^int st_top(sqstack * st, stackdatatype *data)$/;"	f
+st_travel	sqstack.c	/^void st_travel(sqstack * st)$/;"	f
+stack_node_st	sqstack.h	/^typedef struct stack_node_st$/;"	s
+stackdatatype	sqstack.h	/^typedef int stackdatatype;$/;"	t
+stisfull	main.c	/^int stisfull(sqstack *st, int num)$/;"	f
+tail	queue.h	/^	int head,tail;$/;"	m	struct:node_st
+top	sqstack.h	/^	int top;$/;"	m	struct:stack_node_st

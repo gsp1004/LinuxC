@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DATASIZE	sqlist.h	4;"	d
+OBJS	makefile	/^OBJS := $(SRCS:.c=.o)$/;"	m
+SQLIST_H__	sqlist.h	2;"	d
+SRCS	makefile	/^SRCS := $(wildcard *.c)$/;"	m
+data	sqlist.h	/^    datatype data[DATASIZE];$/;"	m	struct:node_st
+datatype	sqlist.h	/^typedef int datatype;$/;"	t
+last	sqlist.h	/^    int last;  \/\/ -1 means no member$/;"	m	struct:node_st
+main	main.c	/^int main()$/;"	f
+node_st	sqlist.h	/^typedef struct node_st$/;"	s
+sqlist	sqlist.h	/^}sqlist;$/;"	t	typeref:struct:node_st
+sqlist_create	sqlist.c	/^sqlist *sqlist_create()$/;"	f
+sqlist_create1	sqlist.c	/^void sqlist_create1(sqlist **ptr)  \/\/ fail to return NULL$/;"	f
+sqlist_delete	sqlist.c	/^int sqlist_delete(sqlist *me, int i)$/;"	f
+sqlist_destroy	sqlist.c	/^int sqlist_destroy(sqlist *me)  \/\/ return 0 for success$/;"	f
+sqlist_display	sqlist.c	/^void sqlist_display(sqlist *me)$/;"	f
+sqlist_find	sqlist.c	/^int sqlist_find(sqlist *me, datatype *data)$/;"	f
+sqlist_getnum	sqlist.c	/^int sqlist_getnum(sqlist *me)$/;"	f
+sqlist_insert	sqlist.c	/^int sqlist_insert(sqlist *me, int i, datatype *data)  \/\/ use pointer is better,  return 0 for success$/;"	f
+sqlist_isempty	sqlist.c	/^int sqlist_isempty(sqlist *me)$/;"	f
+sqlist_setempty	sqlist.c	/^int sqlist_setempty(sqlist *me)$/;"	f
+sqlist_union	sqlist.c	/^int sqlist_union(sqlist *list1, sqlist *list2)$/;"	f
+target	makefile	/^target := main$/;"	m

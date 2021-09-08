@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+MAXSIZE	sqstack.h	4;"	d
+SQSTACK_H__	sqstack.h	2;"	d
+data	sqstack.h	/^	datatype data[MAXSIZE];$/;"	m	struct:node_st
+datatype	sqstack.h	/^typedef int datatype;$/;"	t
+main	main.c	/^int main()$/;"	f
+node_st	sqstack.h	/^typedef struct node_st$/;"	s
+sqstack	sqstack.h	/^}sqstack;$/;"	t	typeref:struct:node_st
+st_create	sqstack.c	/^sqstack * st_create(void)$/;"	f
+st_destroy	sqstack.c	/^void st_destroy(sqstack * st)$/;"	f
+st_isempty	sqstack.c	/^int st_isempty(sqstack * st)$/;"	f
+st_isfull	sqstack.c	/^int st_isfull(sqstack * st)$/;"	f
+st_pop	sqstack.c	/^int st_pop(sqstack * st, datatype *data)$/;"	f
+st_push	sqstack.c	/^int st_push(sqstack * st, datatype *data)$/;"	f
+st_top	sqstack.c	/^int st_top(sqstack * st, datatype *data)$/;"	f
+st_travel	sqstack.c	/^void st_travel(sqstack * st)$/;"	f
+top	sqstack.h	/^	int top;$/;"	m	struct:node_st

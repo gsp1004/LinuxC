@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DBGLINE	gsp.h	3;"	d
+LLIST	llist.h	/^}LLIST;$/;"	t	typeref:struct:llist_head_st
+LLIST_BACKWARD	llist.h	/^	LLIST_BACKWARD,$/;"	e	enum:insert_mode_e
+LLIST_FORWARD	llist.h	/^	LLIST_FORWARD = 1,$/;"	e	enum:insert_mode_e
+LLIST_H__	llist.h	2;"	d
+MALLOC_ERROR	gsp.h	7;"	d
+PARAM_ERROR	gsp.h	6;"	d
+STACK	stack.h	/^typedef LLIST STACK;$/;"	t
+STACK_H__	stack.h	2;"	d
+always_return0	stack.c	/^int always_return0(const void *p1, const void *p2)$/;"	f
+data	llist.h	/^	char data[0];  \/\/ only C99 support char arr[0]$/;"	m	struct:llist_node_st
+data	llist.h	/^	void *data;$/;"	m	struct:llist_node_st
+find_	llist.c	/^static node *find_(LLIST *me, const void *key, llist_cmp *cmp)$/;"	f	file:
+head	llist.h	/^	struct llist_node_st head;$/;"	m	struct:llist_head_st	typeref:struct:llist_head_st::llist_node_st
+id	main.c	/^	int id;$/;"	m	struct:score_st	file:
+insert_mode	llist.h	/^}insert_mode;$/;"	t	typeref:enum:insert_mode_e
+insert_mode_e	llist.h	/^typedef enum insert_mode_e$/;"	g
+llist_cmp	llist.h	/^typedef int llist_cmp(const void *, const void *);$/;"	t
+llist_create	llist.c	/^LLIST *llist_create(int initsize)$/;"	f
+llist_delete	llist.c	/^int llist_delete(LLIST *me, const void *key, llist_cmp *cmp)$/;"	f
+llist_destroy	llist.c	/^void llist_destroy(LLIST *me)$/;"	f
+llist_fetch	llist.c	/^int llist_fetch(LLIST *me, const void *key, llist_cmp *cmp, void *data)$/;"	f
+llist_find	llist.c	/^void * llist_find(LLIST *me, const void *key, llist_cmp *cmp)$/;"	f
+llist_head_st	llist.h	/^typedef struct llist_head_st$/;"	s
+llist_insert	llist.c	/^int llist_insert(LLIST *me, const void *data, insert_mode mode)$/;"	f
+llist_node_st	llist.h	/^typedef struct llist_node_st$/;"	s
+llist_op	llist.h	/^typedef void llist_op(const void *data);$/;"	t
+llist_travel	llist.c	/^void llist_travel(LLIST *me, llist_op *func)$/;"	f
+llist_travel2	llist.c	/^int llist_travel2(LLIST *me, void *data)$/;"	f
+main	main.c	/^int main()$/;"	f
+math	main.c	/^	int math;$/;"	m	struct:score_st	file:
+next	llist.h	/^	struct llist_node_st *next;$/;"	m	struct:llist_node_st	typeref:struct:llist_node_st::llist_node_st
+node	llist.h	/^}node;$/;"	t	typeref:struct:llist_node_st
+prev	llist.h	/^	struct llist_node_st *prev;$/;"	m	struct:llist_node_st	typeref:struct:llist_node_st::llist_node_st
+score	main.c	/^}score;$/;"	t	typeref:struct:score_st	file:
+score_st	main.c	/^typedef struct score_st$/;"	s	file:
+size	llist.h	/^	int size;$/;"	m	struct:llist_head_st
+stack_create	stack.c	/^STACK *stack_create(int initsize)$/;"	f
+stack_destroy	stack.c	/^void stack_destroy(STACK *st)$/;"	f
+stack_pop	stack.c	/^int stack_pop(STACK *st, void *data)$/;"	f
+stack_push	stack.c	/^int stack_push(STACK *st, const void *data)$/;"	f

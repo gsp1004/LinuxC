@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+DBGLINE	gsp.h	3;"	d
+MALLOC_ERROR	gsp.h	7;"	d
+NAMESIZE	poly.h	4;"	d
+NOHEAD_H__	poly.h	2;"	d
+PARAM_ERROR	gsp.h	6;"	d
+coef	poly.h	/^	int coef;$/;"	m	struct:node_st
+exp	poly.h	/^	int exp;$/;"	m	struct:node_st
+list	poly.h	/^}list;$/;"	t	typeref:struct:node_st
+main	main.c	/^int main()$/;"	f
+next	poly.h	/^	struct node_st *next;$/;"	m	struct:node_st	typeref:struct:node_st::node_st
+node_st	poly.h	/^typedef struct node_st$/;"	s
+poly_create	poly.c	/^list * poly_create(int a[][2],int n)$/;"	f
+poly_show	poly.c	/^void poly_show(list *me)$/;"	f
+poly_union	poly.c	/^int poly_union(list * const p1, list * const p2)$/;"	f
