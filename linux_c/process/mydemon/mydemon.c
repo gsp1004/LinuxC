@@ -6,12 +6,15 @@
 #include <sys/stat.h>
 #include <fcntl.h>
 #include <errno.h>
+#include <syslog.h>
 
-
+#if 0
 #define DBGERR(str,args...)   fprintf(stderr, str "\n",##args)
 #define DBGINFO(str,args...)  fprintf(stdout, str "\n",##args)
-
-
+#elif 1 // use syslog
+#define DBGERR(str,args...)   syslog(LOG_ERR , str,##args)
+#define DBGINFO(str,args...)  syslog(LOG_INFO, str,##args)
+#endif
 int mydemon(void)
 {
 	fflush(NULL);
@@ -30,11 +33,11 @@ int mydemon(void)
 		if(fd < 0){
 			DBGERR("open error:%s",strerror(errno));
 		}
-#if 0
+
 		dup2(fd, 0);
 		dup2(fd, 1);
 		dup2(fd, 2);
-#endif
+
 		if(fd > 2){
 			close(fd);
 		}
@@ -49,7 +52,14 @@ int mydemon(void)
 
 int main()
 {
-	mydemon();
+
+	openlog("mydemon",LOG_PID,LOG_DAEMON);
+
+	if(mydemon()){
+		DBGERR("mydaemon failed!");
+	}else{
+		DBGINFO("mydaemon succeed!");
+	}
 
 	FILE *fp = fopen(FNAME, "w");
 	if(NULL == fp){
@@ -61,10 +71,12 @@ int main()
 	{
 		fprintf(fp,"%d\n",i);
 		fflush(fp);
+		//syslog(LOG_DEBUG,"%d", i);
 		sleep(1);
 	}
 
 	fclose(fp);
+	closelog();
 	exit(0);
 
 }
