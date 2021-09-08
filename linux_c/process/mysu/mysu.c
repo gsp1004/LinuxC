@@ -71,11 +71,14 @@ int main(int argc, char **argv)
 		exit(1);
 	}
 	attention(argc, argv);
+
+	fflush(NULL); // fflush before fork for safety
 	pid_t pid = fork();
 	if(pid < 0)
 		exit(1);
 
 	if(0 == pid){
+		fflush(NULL);  // fflush before execXX for safety
 		setuid(atoi(argv[1]));
 		execvp(argv[2], argv+2);
 		perror("execvp()");
