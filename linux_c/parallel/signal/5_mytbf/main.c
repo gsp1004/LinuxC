@@ -1,8 +1,11 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<string.h>
 #include<errno.h>
 #include<unistd.h>
-
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 #include"mytbf.h"
 
 
@@ -34,7 +37,7 @@ int main(int argc, char *argv[])
 	mytbf_t *tbf;
 
 	if(argc < 2){
-		usage();
+		usage(argc, argv);
 		exit(1);
 	}
 
@@ -54,7 +57,7 @@ int main(int argc, char *argv[])
 				continue;
 			}
 		}
-	}while(sfd >= 0);
+	}while(sfd < 0);
 
 	dfd = 1;
 

@@ -1,4 +1,6 @@
+#include<signal.h>
 #include<stdio.h>
+#include<errno.h>
 #include<stdlib.h>
 #include<unistd.h>
 #include"mytbf.h"
@@ -13,6 +15,7 @@ struct mytbf_st{
 };
 
 static struct mytbf_st * job[MYTBF_MAX];
+typedef void (*sighandler_t)(int);
 static sighandler_t alrm_handler_save;
 
 /** get_free_pos
