@@ -54,7 +54,8 @@ static void* alrm_handler(void * n)
 				if(job[i]->token > job[i]->burst){
 					job[i]->token = job[i]->burst;
 				}
-				pthread_cond_broadcast(&job[i]->cond);
+				//pthread_cond_broadcast(&job[i]->cond);
+				pthread_cond_signal(&job[i]->cond);
 				pthread_mutex_unlock(&job[i]->mut);
 			}
 		}
@@ -170,6 +171,9 @@ int mytbf_returntoken(mytbf_t *ptr, int size)
 	if(me->token > me->burst){
 		me->token = me->burst;
 	}
+	// if mute-user(eg:A and B) use the same tbf, when B return token, 
+	// wake A up to see wthether the token is enough, so add pthread_cond_signal here
+	pthread_cond_signal(&me->cond);
 	pthread_mutex_unlock(&me->mut);
 	return size;
 }
