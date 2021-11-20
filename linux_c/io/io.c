@@ -4,8 +4,8 @@
 
 int main()
 {
-	putchar('a');
-	write(1, "b", 1);
+	putchar('a');  // putchar() in stdio.h
+	write(1, "b", 1);  // write() in unistd.h
 
 	putchar('a');
 	write(1, "b", 1);

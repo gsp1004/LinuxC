@@ -1,3 +1,6 @@
+/* this file is used to test myline()
+ * myline(): I use my own code to realize the getline() function
+ */
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
